@@ -5,5 +5,7 @@ import java.io.IOException;
 public class GroupMaker {
 	public static void main(String[] args) throws IOException {
 		Scanner myFile = new Scanner(new File("StudentGroupList.txt"));
+	
+	//yes
 	}
 }
