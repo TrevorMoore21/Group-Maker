@@ -1,12 +1,14 @@
 import java.util.Scanner;
 public class display
 	{
+public static int groupNumber = 0;
+public static int groupSize = 0;
 	public static void numberOfGroups()
 		{
 		Scanner userIntInput = new Scanner(System.in);
-		System.out.println("Would you like to sort by group size or group number?");
+		System.out.println("What would you like to sort by?");
 		System.out.println("\t (1) Group Size");
-		System.out.println("\t (2) Group Number");
+		System.out.println("\t (2) Number of Groups");
 		System.out.println("\t (3) Print Roster");
 		int sizeOrNumber = userIntInput.nextInt();
 	
@@ -15,17 +17,22 @@ public class display
 			{
 			// group size
 			System.out.println("What group size do you want?");
-			int groupSize = userIntInput.nextInt();
+			groupSize = userIntInput.nextInt();
 			}
 		else if(sizeOrNumber == 2)
 			{
 			//group Number
 			System.out.println("How many groups do you want?");
-			int groupNumber = userIntInput.nextInt();
+			groupNumber = userIntInput.nextInt();
 			}
 		else if(sizeOrNumber == 3)
 			{
-			//print roster
+			//print roster 
+			// finish when we have arraylist done
+			//for(int i = 0; i < arrayList.size; i++)
+				//{
+				//System.out.println(arrayList[i]);
+				//}
 			}
 		else
 			{
